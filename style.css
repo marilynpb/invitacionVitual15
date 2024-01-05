@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  body{
+    overflow-x: hidden;
+    background-color: rgb(249, 245, 249)
+  }
+
+  .container-background{
+    background-image: url('./img/fondo.webp');
+    background-size: cover;
+    color: #b5976b;
+  }
+  
+  .contenedor{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/quinceañera/DALL·E3.png');
+    background-position:unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f7f5f2;
+  }
+
+  .layout{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.305);
+  }
+
+  .decoracion-flores{
+    width: 200px;
+    height: auto;
+  }
+
+  .main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  .d1 {
+    position: absolute;
+    background-image: url('./img/quinceañera/5.jpeg');
+    background-size: 600%;
+  
+    height: 30vh;
+    width: 15vw;
+  
+    background-position: left;
+  
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd1 10s 1, dd12 10s 1;
+    animation-delay: 4s, 14s;
+  }
+  .d2 {
+    position: absolute;
+    background-image: url('./img/quinceañera/5.jpeg');
+    background-size: 390%;
+  
+    height: 50vh;
+    width: 25vw;
+  
+    background-position: left;
+    left: 10vw;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd2 10s 2;
+    animation-delay: 4s;
+  }
+  .d3 {
+    position: absolute;
+    background-image: url('./img/quinceañera/5.jpeg');
+    background-size: cover;
+    overflow: hidden;
+  
+    height: 100vh;
+    width: 50vw;
+    left: 25vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: center;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd3 10s 2;
+    animation-delay: 4s;
+  }
+  .d4 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url('./img/quinceañera/5.jpeg');
+    background-size: 370%;
+  
+    height: 75vh;
+    width: 40vw;
+    left: 60vw;
+    background-position: right;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd4 10s 2;
+    animation-delay: 4s;
+  }
+  
+@media (max-width: 600px) {
+    .d1 {
+        width: 15vw;
+      }
+      .d2 {
+        width:30vw;
+      }
+      .d3 {
+        width: 75vw;
+        left: 18vw;
+      }
+      .d4 {
+        width: 40vw;
+      }
+      .contenedor{
+        background-position:center;
+      }
+}
+
+.fecha{
+  border: 1px solid #b5976b;
+  padding: 5px;
+}
+
+.parrafos{
+  font-size: 20px;
+}
+
+h1{
+  padding-top: 50vh!important;
+  color: #b5976b;
+}
+
+.contador{
+  max-width: 400px;
+  height: 400px;
+  background-image: url('./img/decoraciones/contador\ \(1\).png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
