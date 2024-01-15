@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Rosela';
+  src: url('./font/rosela_4/Rosela.ttf') format('truetype');
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0%;
@@ -6,7 +12,9 @@
 
   body{
     overflow-x: hidden;
-    background-color: rgb(249, 245, 249)
+    background-color: rgb(249, 245, 249);
+    font-family: 'Rosela', sans-serif; 
+
   }
 
   .container-background{
@@ -158,8 +166,9 @@ button{
   background-color: rgb(243, 164, 191);
   border-radius: 7px;
   padding: 5px 15px;
-  width: 180px;
+  width: 200px;
   color: white;
+  font-size: 18px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
