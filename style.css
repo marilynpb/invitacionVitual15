@@ -18,7 +18,7 @@
   .contenedor{
     width: 100%;
     height: 100vh;
-    background-image: url('./img/quinceañera/DALL·E3.png');
+    background-image: url('./img/quinceañera/scale/nahi1.png');
     background-position:unset;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@
   .layout{
     width: 100%;
     height: 100%;
-    background-color:rgba(0, 0, 0, 0.305);
+    background-color:rgba(250, 192, 239, 0.493);
   }
 
   .decoracion-flores{
@@ -40,6 +40,7 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    overflow-x: hidden;
   }
   .d1 {
     position: absolute;
@@ -152,3 +153,28 @@ h1{
   background-repeat: no-repeat;
 }
 
+button{
+  border: none;
+  background-color: rgb(243, 164, 191);
+  border-radius: 7px;
+  padding: 5px 15px;
+  width: 180px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover{
+  background-color: palevioletred;
+}
+
+.tarjeta-detalles{
+  min-height: 300px!important;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 1px solid #b5976b;
+  border-radius: 10px;
+  min-height: 200px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
