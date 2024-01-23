@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Te invito a mis 15</title>
 </head>
@@ -18,16 +19,6 @@
             <h2 class="pb-3" style="text-shadow: 2px 2px 4px #4b4848;">Gloria Nahiara Hajduczyk Boyko</h2>
             <span class="fecha" style="font-size: 20px;  text-shadow: 2px 2px 4px #4b4848; border: 2px solid #b5976b;">15/03/2024</span>
         </div>
-                <!--
-        <div class="d-flex justify-content-center contenedor-flores p-0 m-0 container-fluid">
-            <img src="./img/decoraciones/right-top.png" class="decoracion-flores p-0 m-0" align="left" style="transform: scaleX(-1);">
-            <div class="col-8 text-center">
-                <h1 class=" mt-5"><img src="./img/decoraciones/img_linea01.svg" width="100px"> Mis 15 años <img src="./img/decoraciones/img_linea01.svg" width="100px" style="transform: scaleX(-1);"></h1>
-                <h2>Gloria Nahiara Hajduczyk Boyko</h2>
-                <span class="fecha">15/03/2024</span>
-            </div>
-            <img src="./img/decoraciones/right-top.png" class="decoracion-flores p-0 m-0">
-        </div>-->
     </div>
     
     <div class="container-background text-center">
@@ -78,13 +69,13 @@
                 <div class="col-12 pt-4">
                     <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Dirección</p>
                     <span class="p-0 m-0" style="font-size: 24px;">Estados Unidos 3141 Lanús Oeste, Buenos Aires</span><br>
-                    <button class="mx-auto text-center mt-3">¿Cómo llegar?</button>
+                    <button class="mx-auto text-center mt-3">Ver mapa</button>
                 </div>
 
                 <div class="col-12 pt-4">
                     <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Hora</p>
                     <span class="p-0 m-0" style="font-size: 24px;">21hs</span><br>
-                    <button class="mx-auto text-center mt-3">Confirmar asistencia</button>
+                    <button id="btnConfirmar" class="mx-auto text-center mt-3">Confirmar asistencia</button>
                 </div>
 
                 <div class="col-12 pt-5 mt-5">
@@ -131,34 +122,40 @@
         <img src="./img/decoraciones/img_ondas04.svg">
     </div>
 
-    <script>
-        // Definir la fecha objetivo (15 de marzo a las 21hs, hora de Argentina)
-        const targetDate = new Date('March 15, 2024 21:00:00 GMT-0300');
-        
-        // Función para actualizar la cuenta regresiva
-        function updateCountdown() {
-            const currentDate = new Date();
-            const difference = targetDate - currentDate;
-        
-            // Calcular días, horas, minutos y segundos restantes
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-        
-            // Actualizar los elementos HTML
-            document.getElementById('days').innerText = days;
-            document.getElementById('hours').innerText = hours;
-            document.getElementById('minutes').innerText = minutes;
-            document.getElementById('seconds').innerText = seconds;
-        }
-        
-        // Actualizar la cuenta regresiva cada segundo
-        setInterval(updateCountdown, 1000);
-        
-        // Llamar a la función para que la cuenta regresiva se actualice de inmediato
-        updateCountdown();
-        </script>
+    <!-- Formulario como widget -->
+    <div id="formularioWidget" class="widget-container">
+        <div class="widget-content">
+            <span class="close-btn" onclick="cerrarFormulario()">×</span>
+            <h2>Confirmar Asistencia</h2>
+            <form id="formularioConfirmacion">
+                <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" required>
+                </div>
+                <button type="button" class="btn btn-success" onclick="confirmarAsistencia()">Confirmar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mensaje de Agradecimiento -->
+    <div id="mensajeAgradecimiento" class="widget-container">
+        <div class="widget-content">
+        <span class="close-btn" onclick="cerrarFormulario()">×</span>
+        <h2>Muchas Gracias por Confirmar tu Asistencia</h2>
+        </div>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="./js/contador.js"></script>
+    <script src="./js/confirmacion.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
