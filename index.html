@@ -17,7 +17,7 @@
 
             <h1 class="fw-bold" style="text-shadow: 2px 2px 4px #0e0d0d;"><img src="./img/decoraciones/img_linea01.svg" width="50px"> Mis 15 años <img src="./img/decoraciones/img_linea01.svg" width="50px" style="transform: scaleX(-1);"></h1>
             <h2 class="pb-3" style="text-shadow: 2px 2px 4px #4b4848;">Gloria Nahiara Hajduczyk Boyko</h2>
-            <span class="fecha" style="font-size: 20px;  text-shadow: 2px 2px 4px #4b4848; border: 2px solid #b5976b;">15/03/2024</span>
+            <span class="fecha" style="font-size: 20px;  text-shadow: 2px 2px 4px #4b4848; border: 2px solid #b5976b;">06/04/2024</span>
         </div>
     </div>
     
@@ -58,7 +58,7 @@
             <div class="row pt-5">
                 <div class="col-12">
                     <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Día</p>
-                    <span class="p-0 m-0" style="font-size: 24px;">15/03/2024</span>
+                    <span class="p-0 m-0" style="font-size: 24px;">06/04/2024</span>
                 </div>
 
                 <div class="col-12 pt-4">
@@ -67,15 +67,19 @@
                 </div>
 
                 <div class="col-12 pt-4">
-                    <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Dirección</p>
-                    <span class="p-0 m-0" style="font-size: 24px;">Estados Unidos 3141 Lanús Oeste, Buenos Aires</span><br>
-                    <button class="mx-auto text-center mt-3">Ver mapa</button>
+                    <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Hora</p>
+                    <span class="p-0 m-0" style="font-size: 24px;">21hs</span><br>
+                    <!--
+                    <button id="btnConfirmar" class="mx-auto text-center mt-3">Confirmar asistencia</button>
+                    -->
                 </div>
 
                 <div class="col-12 pt-4">
-                    <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Hora</p>
-                    <span class="p-0 m-0" style="font-size: 24px;">21hs</span><br>
-                    <button id="btnConfirmar" class="mx-auto text-center mt-3">Confirmar asistencia</button>
+                    <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Dirección</p>
+                    <span class="p-0 m-0" style="font-size: 24px;">Estados Unidos 3141 Lanús Oeste, Buenos Aires</span><br>
+                    <button id="toggleMap" class="mx-auto text-center mt-3" onclick="toggleMap()">Ver mapa</button>
+                    <iframe class="container-fluid mt-4" id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6808.204897038049!2d-64.52379916039351!3d-31.438846419373814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d67ccd89c55e1%3A0xb26c681131dd54c3!2sDespensa%20El%20P4irata!5e0!3m2!1ses!2sar!4v1707245262050!5m2!1ses!2sar" 
+                    height="250px" style="border:0; display: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <div class="col-12 pt-5 mt-5">
@@ -93,7 +97,7 @@
                                 <p style="font-size: 20px;">Elegante Sport</p>
                             </div>
                         </div>
-
+                        <!--
                         <div class="col-11 mx-auto">
                             <div class="tarjeta-detalles">
                                 <img src="./img/decoraciones/Grupo0333-removebg-preview.png" class="mx-auto p-0 m-0" width="150px" height="auto" style="transform: scaleX(-1);">
@@ -101,6 +105,7 @@
                                 <button class="mx-auto text-center mt-3" style="width: auto;">CBU</button>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
 
@@ -111,7 +116,7 @@
 
         <h1 class="fw-bold pt-5 mt-5"><img src="./img/decoraciones/img_linea01.svg" width="50px"> Mis 15 años <img src="./img/decoraciones/img_linea01.svg" width="50px" style="transform: scaleX(-1);"></h1>
         <h2 class="pb-3">Gloria Nahiara Hajduczyk Boyko</h2>
-        <span class="fecha" style="font-size: 20px;">15/03/2024</span>
+        <span class="fecha" style="font-size: 20px;">06/04/2024</span>
 
         <div class="main mt-5">
             <div class="d1"></div>
@@ -156,6 +161,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <script src="./js/contador.js"></script>
     <script src="./js/confirmacion.js"></script>
+    <script>
+        // Definir la función toggleMap en el ámbito global
+        function toggleMap() {
+            var mapa = document.getElementById("mapa");
+            var boton = document.getElementById("toggleMap");
+    
+            if (mapa.style.display === "none") {
+                mapa.style.display = "block";
+                boton.textContent = "Ocultar mapa";
+            } else {
+                mapa.style.display = "none";
+                boton.textContent = "Ver mapa";
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            // Tu código JavaScript aquí
+        });
+    </script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

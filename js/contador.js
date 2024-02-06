@@ -1,5 +1,5 @@
 // Definir la fecha objetivo (15 de marzo a las 21hs, hora de Argentina)
-const targetDate = new Date('March 15, 2024 21:00:00 GMT-0300');
+const targetDate = new Date('April 06, 2024 21:00:00 GMT-0300');
         
 // Función para actualizar la cuenta regresiva
 function updateCountdown() {
