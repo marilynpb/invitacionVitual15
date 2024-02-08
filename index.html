@@ -9,12 +9,24 @@
     <title>Mis 15</title>
     <link rel="icon" href="./img/icono/mariposa-de-seda.png" type="image/x-icon">
 </head>
-<body class="text-center">  
+<body class="text-center">                 
     <img width="120px" src="./img/decoraciones/Grupo02_c.webp" align="left">
     <img class="p-0 m-0" width="120px" src="./img/decoraciones/Grupo02_c.webp" align="right" style="transform: scaleX(-1);">
     <div class="contenedor container-fluid text-center p-0 m-0">
         
         <div class="layout">
+            <div id="audioContainer" style="display: none;">
+                <audio id="miAudio" controls autoplay volume="0.25">
+                    <source src="./musica/Tchaikovsky.mp3" type="audio/mp3">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+              </div>
+              
+              <button id="toggleAudio">
+                <img id="audioIcon" src="./img/icono/mute.svg" alt="Reproducir">
+              </button>
+        
+              
 
             <h1 class="fw-bold" style="text-shadow: 2px 2px 4px #0e0d0d;"><img src="./img/decoraciones/img_linea01.svg" width="50px"> Mis 15 años <img src="./img/decoraciones/img_linea01.svg" width="50px" style="transform: scaleX(-1);"></h1>
             <h2 class="pb-3" style="text-shadow: 2px 2px 4px #4b4848;">Gloria Nahiara Hajduczyk Boyko</h2>
@@ -162,6 +174,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <script src="./js/contador.js"></script>
     <script src="./js/confirmacion.js"></script>
+    
     <script>
         // Definir la función toggleMap en el ámbito global
         function toggleMap() {
@@ -181,6 +194,32 @@
             // Tu código JavaScript aquí
         });
     </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('miAudio');
+        var audioIcon = document.getElementById('audioIcon');
+    
+        document.getElementById('toggleAudio').addEventListener('click', function() {
+            if (audio.paused) {
+                audioIcon.src = './img/icono/volume.svg';
+                audio.play();
+            } else {
+                audioIcon.src = './img/icono/mute.svg';
+                audio.pause();
+            }
+        });
+    });
+    </script>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('miAudio');
+            audio.volume = 0.30; // Establece el volumen al 25%
+        });
+    </script>
+
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
