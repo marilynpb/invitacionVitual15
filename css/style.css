@@ -169,7 +169,7 @@
     font-weight: bold;
   }
 
-  h3{
+  h3, .title-contador{
       font-weight: bold;
       font-family: '2', sans-serif;
   }
@@ -325,3 +325,7 @@
     opacity: 1;
   }
 }
+
+
+
+/* Slide */
