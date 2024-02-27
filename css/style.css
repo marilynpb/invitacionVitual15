@@ -2,7 +2,15 @@
     font-family: 'Rosela';
     src: url('.../font/rosela_4/Rosela.ttf') format('truetype');
   }
-  
+
+  @font-face {
+    font-family: '1';
+    src: url('../font/moora_light/MOORA\ LIGHT\ REGULER.otf') format('truetype');
+  }
+  @font-face {
+    font-family: '2';
+    src: url('../font/rosela_4/lovely_balloon/Lovely\ Balloon.ttf') format('truetype');
+  }
   
   * {
       box-sizing: border-box;
@@ -13,7 +21,8 @@
     body{
       overflow-x: hidden!important;
       background-color: rgb(249, 245, 249);
-      font-family: 'Rosela', sans-serif; 
+      font-family: '1', sans-serif;
+      font-weight: bolder;
     }
   
     .container-background{
@@ -151,7 +160,22 @@
     padding-top: 50vh!important;
     color: #b5976b;
     font-size: 35px;
+    font-family: '2', sans-serif;
   }
+
+  h2, span{
+    font-family: '1', sans-serif;
+    font-weight: bold;
+  }
+
+  h3{
+      font-weight: bold;
+  }
+
+  span{
+    border-radius: 3px;
+  }
+
   
   .contador{
     max-width: 400px;

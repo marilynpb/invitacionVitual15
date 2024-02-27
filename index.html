@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/home.css">
     <title>Home</title>
 </head>
@@ -16,10 +17,21 @@
                 <div class="layout_content_text">
                     <h1 class="h44 focus-in-expand-fwd"><span class="span4">Te invito a </span></h1>
                     <h1 class="h44 focus-in-expand-fwd2"><span class="span4">Mis 15</h1>
-                    <br>
                     <h3 class="layout_text_h3 text-focus-in" style="font-size: 30px;">Gloria Nahiara Hajduczyck Boyko</h3>
                     <br>
                     <h3 class="layout_text_h3 text-focus-in2" style="font-size: 25px;">Sabado 06 de Abril</h3>
+
+                    <div class="container text-focus-in3">
+                        <circular-text
+                          class="circular-text"
+                          text="DETALLES DE LA FIESTA AQUÍ."
+                          radius="50">    
+                        </circular-text>
+                        <a href="./tarjeta.html">
+                            <img src="./img/icono/icons8-clasificar-abajo-48 (2).png" class="logo" alt="" style="  transform: rotate(-720deg);">
+                        </a>
+                      </div>
+                    
                 </div>
             </div>
         </div>
@@ -27,6 +39,23 @@
         <div class="layer"></div>
     </div>
     </main>
-    <script src="./js/loading.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/@webpunk/circular-text@1.3.0/dist-web/index.bundled.js">
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("enlace").addEventListener("click", function(event) {
+            // Evita el comportamiento predeterminado del enlace (navegar a tarjeta.html)
+            event.preventDefault();
+            // Redirige a tarjeta.html
+            window.location.href = "./tarjeta.html";
+            // Activa el audio en tarjeta.html después de la redirección
+            localStorage.setItem("activarAudio", "true");
+        });
+    });
+    </script>
+    
+    <!--script src="./js/loading.js"></script-->
 </body>
 </html>
