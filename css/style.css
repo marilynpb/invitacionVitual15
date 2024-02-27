@@ -29,6 +29,7 @@
       background-image: url('../img/fondo.webp');
       background-size: cover;
       color: #b5976b;
+      overflow-x: hidden;
     }
     
     .contenedor{
@@ -170,6 +171,7 @@
 
   h3{
       font-weight: bold;
+      font-family: '2', sans-serif;
   }
 
   span{
@@ -190,8 +192,9 @@
     background-color: rgb(243, 164, 191);
     border-radius: 7px;
     padding: 5px 15px;
-    width: 200px;
+    width: 160px;
     color: white;
+    font-weight: bolder;
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
