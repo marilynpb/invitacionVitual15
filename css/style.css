@@ -61,7 +61,7 @@
     }
     .d1 {
       position: absolute;
-      background-image: url('../img/princc.jpg');
+      background-image: url('../img/princbeaty.jpg');
       background-size: 600%;
     
       height: 30vh;
@@ -78,7 +78,7 @@
     }
     .d2 {
       position: absolute;
-      background-image: url('../img/maripossa.jpg');
+      background-image: url('../img/princbeaty.jpg');
       background-size: 390%;
     
       height: 50vh;
@@ -95,7 +95,7 @@
     }
     .d3 {
       position: absolute;
-      background-image: url('../img/princc.jpg');
+      background-image: url('../img/princbeaty.jpg');
       background-size: cover;
       overflow: hidden;
     
@@ -114,7 +114,7 @@
     .d4 {
       position: absolute;
       overflow: hidden;
-      background-image: url('../img/princc.jpg');
+      background-image: url('../img/princbeaty.jpg');
       background-size: 370%;
     
       height: 75vh;
