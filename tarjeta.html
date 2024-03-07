@@ -4,55 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Mis 15</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>   
     <link rel="icon" href="./img/icono/mariposa-de-seda.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/mariposa.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <title>Mis 15</title>
 </head>
+
 <body class="text-center text-focus-in ">                 
     <img width="100px" src="./img/decoraciones/Grupo03.webp" align="left">
     <img class="p-0 m-0" width="100px" src="./img/decoraciones/Grupo03.webp" align="right" style="transform: scaleX(-1);">
+
+    <!-- Header -->
     <div class="contenedor container-fluid text-center p-0 m-0">
-        
         <div class="layout">
             <div id="audioContainer" style="display: none;">
                 <audio id="miAudio" controls autoplay volume="0.25">
                     <source src="./musica/Tchaikovsky.mp3" type="audio/mp3">
                     Tu navegador no soporta la reproducción de audio.
                 </audio>
-              </div>
-              <!--
-              <button id="toggleAudio">
-                <img id="audioIcon" src="./img/icono/mute.svg" alt="Reproducir">
-              </button>-->        
+            </div>
+            <!--
+            <button id="toggleAudio">
+            <img id="audioIcon" src="./img/icono/mute.svg" alt="Reproducir">
+            </button>-->        
 
             <h1 class="fw-bold pb-3" style="text-shadow: 2px 2px 4px #0e0d0d;"  data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500"><img src="./img/decoraciones/img_linea01.svg" width="50px"> Mis 15 años <img src="./img/decoraciones/img_linea01.svg" width="50px" style="transform: scaleX(-1);"></h1>
             <h2 class="pb-3" style="text-shadow: 2px 2px 4px #4b4848;"  data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1500" >Gloria Nahiara Hajduczyk Boyko</h2>
+            data-aos-duration="1500">Gloria Nahiara Hajduczyk Boyko</h2>
             <span class="fecha" style="font-size: 20px;  text-shadow: 2px 2px 4px #4b4848; border: 2px solid #b5976b; background-color: #b5976b81;">06/04/2024</span>
         </div>
     </div>
     
     <div class="container-background text-center">
+        <!-- Decoracion Lineas -->
         <img class="p-0 m-0" src="./img/decoraciones/lineas01 (1).svg">
-
-
-
         <img class="pt-5 pb-0 mb-0" src="./img/decoraciones/Grupo02_c.webp" width="100px" style="transform: rotate(270deg);"   data-aos="zoom-in">
 
+        <!-- Frase -->
         <p style="font-size: 22px;"  data-aos="fade-up"
         data-aos-duration="3000">Hay momentos inolvidables que se atesoran en el corazón para siempre"</p>
         <p class="mb-5 pb-5" style="font-size: 20px;
         padding-bottom: 130px!important;"  data-aos="fade-up"
         data-aos-duration="3000">Te espero para compartir la alegría de esa noche que será para mágica, inolvidable y única.</p>
         
-        
+        <!-- Container Cuenta Regresiva -->
         <div class="contador mx-auto text-center mt-5"  data-aos="zoom-in">
             <p class="fw-bold mt-5 title-contador" style="font-size: 28px;"  data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
@@ -76,12 +79,13 @@
 
         <img src="./img/decoraciones/lineas02.svg" class="pt-5 mt-5">
 
-
+        <!-- Datos importantes -->
         <div class="text-center mt-4 mx-auto" style="max-width: 400px;" >
             <img src="./img/decoraciones/Grupo04-removebg-preview.png" class="mx-auto p-0 m-0" width="300px" height="auto"  data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
 
+            <!-- Información de la Fiesta -->
             <h3 class="m-0 p-0" style="font-size: 25px;" >Información</h3>
             <img class="p-0 m-0 mt-1" width="200px" height="auto" src="./img/decoraciones/goldd.png">
 
@@ -99,10 +103,7 @@
 
                 <div class="col-12 pt-4">
                     <p class="p-0 m-0 fw-bold" style="font-size: 18px;">Hora</p>
-                    <span class="p-0 m-0" style="font-size: 23px;">21hs</span><br>
-                    <!--
-                    <button id="btnConfirmar" class="mx-auto text-center mt-3">Confirmar asistencia</button>
-                    -->
+                    <span class="p-0 m-0" style="font-size: 23px;">20:30hs</span><br>                    
                 </div>
 
                 <div class="col-12 pt-4">
@@ -111,10 +112,51 @@
                     <button id="toggleMap" class="mx-auto text-center mt-3" onclick="toggleMap()">Ver mapa</button>
                     <iframe class="container-fluid mt-4" id="mapa" src="https://www.google.com/maps/embed?pb=!3m2!1ses!2sar!4v1707247455260!5m2!1ses!2sar!6m8!1m7!1sYAyc05ECjCBa46P1U6WYTg!2m2!1d-34.72667194327489!2d-58.41151304714592!3f266.0939!4f0!5f0.7820865974627469" 
                     height="250px" style="border:0; display: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="col-12 pt-5 mt-5">
                     
+                    <p class="pt-5">Si ya sabés que no te vas a perder la fiesta, por favor confirmá tu asistencia a continuación :)</p>
+                    <button id="btnConfirmar" class="mx-auto text-center mt-3 buttonConfirmar">Confirmar asistencia</button>
+
+                    <!-- Contenedor Formulario como widget -->
+                    <div id="formularioWidget" class="widget-container">
+                        <div class="widget-content">
+                            <span class="close-btn" onclick="cerrarFormulario()">×</span>
+                            <h2 style="font-size: 24px; font-weight: bold;" class="ocultar">Confirmar Asistencia</h2>
+
+                            <!-- Mensaje de Confirmación Exitosa-->
+                            <h2 class="confirmacionExitosa" style="font-size: 24px; font-weight: bold;">Confirmado!</h2>
+                            <h3 class="confirmacionExitosa">Muchas gracias!</h3>
+                            <img class="confirmacionExitosa text-center mx-auto" src="./img/decoraciones/mariposaGif.gif" width="33%">
+                            <p class="confirmacionExitosa">Nos vemos pronto!</p>
+
+                            <!-- Formulario de Confirmación -->
+                            <div class="lg:w-1/2  p-2 bg-white bg-opacity-10 rounded-xl ml-32">
+                                <form>
+                                    <h3 class="flex items-center my-8 bg-black">
+                                        <span aria-hidden="true" class="grow bg-gray-200 rounded h-0.5"></span>
+                                    </h3>
+                                    
+                                    <!-- Inputs -->
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 ocultar">
+                                        <div class="space-y-1 form-group mb-3">
+                                            <input type="text" class="form-control fw-bold" id="firstname" required placeholder="Nombre">
+                                            <subiza class="subizanow" id="Firstname"></subiza>
+                                        </div>
+                                        <div class="space-y-1 form-group mb-3">
+                                            <input type="text" class="form-control fw-bold" id="lastname" required placeholder="Apellido">
+                                            <subiza class="subizanow" id="Lastname"></subiza>
+                                        </div>
+                                    </div>
+
+                                    <button id="sendbtn" onclick="initSend()" type="button" class="btn ocultar" style="background-color: #b5976b; font-weight: bold; color: white;">Confirmar</button>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detalles Extra -->
+                <div class="col-12 pt-5 mt-5">  
                     <h3 class="m-0 p-0" >Detalles</h3>
                     <img class="p-0 m-0 mt-1" width="200px" height="auto" src="./img/decoraciones/goldd.png">
         
@@ -130,6 +172,7 @@
                                 <p style="font-size: 20px;">Elegante Sport</p>
                             </div>
                         </div>
+    
                         <!--
                         <div class="col-11 mx-auto">
                             <div class="tarjeta-detalles">
@@ -141,7 +184,6 @@
                         -->
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -151,6 +193,7 @@
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000">
 
+        <!-- Footer -->
         <h1 class="fw-bold pt-5 pb-2"  data-aos="fade-up"
         data-aos-duration="3000"><img src="./img/decoraciones/img_linea01.svg" width="40px"> Mis 15 años <img src="./img/decoraciones/img_linea01.svg" width="50px" style="transform: scaleX(-1);"></h1>
         <h2 class="pb-2"  data-aos="fade-up"
@@ -168,90 +211,38 @@
         <img src="./img/decoraciones/img_ondas04.svg">
     </div>
 
-    <!-- Formulario como widget -->
-    <div id="formularioWidget" class="widget-container">
-        <div class="widget-content">
-            <span class="close-btn" onclick="cerrarFormulario()">×</span>
-            <h2>Confirmar Asistencia</h2>
-            <form id="formularioConfirmacion">
-                <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" required>
-                </div>
-                <div class="form-group">
-                <label for="apellido">Apellido:</label>
-                <input type="text" class="form-control" id="apellido" required>
-                </div>
-                <button type="button" class="btn btn-success" onclick="confirmarAsistencia()">Confirmar</button>
-            </form>
-        </div>
-        
-    </div>
-
-    <!-- Mensaje de Agradecimiento -->
-    <div id="mensajeAgradecimiento" class="widget-container">
-        <div class="widget-content">
-        <span class="close-btn" onclick="cerrarFormulario()">×</span>
-        <h2>Muchas Gracias por Confirmar tu Asistencia</h2>
-        </div>
-    </div>
+    <script src="./js/mostrarMapa.js"></script>
+    <script src="./js/volumenAudio.js"></script>  
+    <script src="./js/formulario.js"></script>
+    <script src="./js/contador.js"></script>
+    <script src="./js/confirmacion.js"></script>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
-    <script src="./js/contador.js"></script>
-    <script src="./js/confirmacion.js"></script>
     
-    <script>
-        // Definir la función toggleMap en el ámbito global
-        function toggleMap() {
-            var mapa = document.getElementById("mapa");
-            var boton = document.getElementById("toggleMap");
-    
-            if (mapa.style.display === "none") {
-                mapa.style.display = "block";
-                boton.textContent = "Ocultar mapa";
-            } else {
-                mapa.style.display = "none";
-                boton.textContent = "Ver mapa";
-            }
-        }
-    
-        document.addEventListener("DOMContentLoaded", function() {
-            // Tu código JavaScript aquí
-        });
-    </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var audio = document.getElementById('miAudio');
-        var audioIcon = document.getElementById('audioIcon');
-    
-        document.getElementById('toggleAudio').addEventListener('click', function() {
-            if (audio.paused) {
-                audioIcon.src = './img/icono/volume.svg';
-                audio.play();
-            } else {
-                audioIcon.src = './img/icono/mute.svg';
-                audio.pause();
-            }
-        });
-    });
-    </script>
-    
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('miAudio');
-            audio.volume = 0.30; // Establece el volumen al 25%
-        });
-    </script>  
-    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8nj0K65JTyR5GZbLl");
+        })();
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8nj0K65JTyR5GZbLl");
+        })();
+    </script>
 </body>
 </html>

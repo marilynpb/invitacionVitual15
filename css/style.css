@@ -35,7 +35,7 @@
     .contenedor{
       width: 100%;
       height: 100vh;
-      background-image: url('../img/quinceañera/scale/nahi1.png');
+      background-image: url('../img/quinceañera/princeess2.jpg');
       background-position:unset;
       background-repeat: no-repeat;
       background-size: cover;
@@ -61,7 +61,7 @@
     }
     .d1 {
       position: absolute;
-      background-image: url('../img/quinceañera/5.jpeg');
+      background-image: url('../img/princc.jpg');
       background-size: 600%;
     
       height: 30vh;
@@ -78,7 +78,7 @@
     }
     .d2 {
       position: absolute;
-      background-image: url('../img/quinceañera/5.jpeg');
+      background-image: url('../img/maripossa.jpg');
       background-size: 390%;
     
       height: 50vh;
@@ -95,7 +95,7 @@
     }
     .d3 {
       position: absolute;
-      background-image: url('../img/quinceañera/5.jpeg');
+      background-image: url('../img/princc.jpg');
       background-size: cover;
       overflow: hidden;
     
@@ -114,7 +114,7 @@
     .d4 {
       position: absolute;
       overflow: hidden;
-      background-image: url('../img/quinceañera/5.jpeg');
+      background-image: url('../img/princc.jpg');
       background-size: 370%;
     
       height: 75vh;
@@ -189,19 +189,16 @@
   
   button{
     border: none;
-    background-color: rgb(243, 164, 191);
+    background-color: rgb(250, 161, 192);
     border-radius: 7px;
     padding: 5px 15px;
-    width: 160px;
+    width: 200px;
     color: white;
     font-weight: bolder;
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
   
-  button:hover{
-    background-color: palevioletred;
-  }
   
   .tarjeta-detalles{
     min-height: 300px!important;
@@ -220,6 +217,7 @@
   .widget-container {
     display: none;
     position: fixed;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -227,10 +225,14 @@
     padding: 20px;
     border: 1px solid #d4d4d4;
     z-index: 1;
+    -webkit-box-shadow: -1px 15px 300px 82px rgba(0,0,0,1);
+-moz-box-shadow: -1px 15px 300px 82px rgba(0,0,0,1);
+box-shadow: -1px 15px 300px 82px rgba(0,0,0,1);
   }
   
   .widget-content {
-    width: 300px;
+    width: 100%;
+    text-align: center;
   }
   
   .close-btn {
@@ -326,3 +328,94 @@
   }
 }
 
+
+/*********************/
+
+.buttonConfirmar{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .buttonConfirmar:active {
+    transform: scale(0.96);
+  }
+  .buttonConfirmar:before,
+  .buttonConfirmar:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  .buttonConfirmar:before {
+    top: -70%;
+    background-image: radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, rgb(250, 161, 192) 20%, transparent 30%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, rgb(250, 161, 192) 15%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  .buttonConfirmar:after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, rgb(250, 161, 192) 15%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%),
+      radial-gradient(circle, rgb(250, 161, 192) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  .confirmacionExitosa{
+    display: none;
+  }
+
+  .oculta{
+    display: block;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+}
