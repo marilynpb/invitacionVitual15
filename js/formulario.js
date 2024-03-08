@@ -27,7 +27,7 @@ function initSend() {
         error = 0;
     fields.forEach(element => {
         let fieldName = document.getElementsByTagName("subiza")[index].id;
-        if (!element.checkValidity()) (element.value == "") ? response[index].innerHTML = fieldName + ' Is required' : response[index].innerHTML = element.validationMessage;
+        if (!element.checkValidity()) (element.value == "") ? response[index].innerHTML = 'Por favor, complete los campos' : response[index].innerHTML = element.validationMessage;
         if (element.checkValidity()) {
             response[index].innerHTML = "";
         }else{
